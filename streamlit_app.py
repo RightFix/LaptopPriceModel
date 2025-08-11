@@ -14,8 +14,8 @@ company_options = ["","Apple", "HP", "Microsoft"]
 company_option = st.selectbox(
     "Company:",  company_options  
 )
-for options in sbv.keys():
-  st.selectbox= ( options , ["",] + list(sbv[options]))
+for options in svb.keys():
+  st.selectbox= ( options , ["",] + list(svb[options]))
   
 # Display the selected option
 
