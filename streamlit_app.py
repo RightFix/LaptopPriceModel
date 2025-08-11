@@ -7,14 +7,16 @@ st.write(
     "Select your laptop specification So you would know your budget"
 )
 
-company = st.selectbox( "Company :" , sorted(list(svb[str(company)])), index = None, placeholder = "Company")
-product = st.selectbox( "Product :" , sorted(list(svb[str(product)])), index = None, placeholder = "Product")
+company = st.selectbox( "Company" , sorted(list(svb[str(company)])), index = None, placeholder = "Company")
+product = st.selectbox( "Product" , sorted(list(svb[str(product)])), index = None, placeholder = "Product")
 typename = st.selectbox( "Type Name", sorted(list(svb[str(typename)])), index = None, placeholder = "Type Name")
 screeenresoluttion =  st.selectbox( "Screen Resolution" , sorted(list(svb[str(screeenresoluttion)])), index = None, placeholder = "Screen Resolution")
 cpu= st.selectbox( "CPU", sorted(list(svb[str(cpu)])), index = None, placeholder = "CPU")
-ram = st.selectbox( "RAM", sorted(list(svb[str(ram)])), index = None, placeholder = options,)
-company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
-company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+ram = st.selectbox( "RAM", sorted(list(svb[str(ram)])), index = None, placeholder = "RAM")
+memory = st.selectbox( "Memory", sorted(list(svb[str(memory)])), index = None, placeholder = "Memory",)
+gpu = st.selectbox( "GPU" , sorted(list(svb[str(gpu)])), index = None, placeholder ="GPU")
+opsys= st.selectbox( "Operating System" , sorted(list(svb[str(opsys)])), index = None, placeholder ="Operating System")
+weight= st.selectbox( "Weight" , sorted(list(svb[str(weight)])), index = None, placeholder ="Weight")
 
 features = [company, product, typename, screeenresoluttion, cpu, ram, , memory, gpu, opsys, weight ]  
 price= result(features)
