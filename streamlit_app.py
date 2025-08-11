@@ -23,5 +23,7 @@ features = [company, product, typename, inches, screenresolution, cpu, ram, memo
 price= result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{round(price[0],-2):,}")
-  st.write(f"Your Budget should be £{features}")
+  st.write("Your specification are :")
+  for f in features:
+    st.write(f"{f}")
 
