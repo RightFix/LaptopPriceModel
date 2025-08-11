@@ -7,8 +7,8 @@ st.write(
     "Select your laptop specification So you would know your budget"
 )
 
-company = st.selectbox(  , sorted(list(svb[str(company)])), index = None, placeholder = options,)
-company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( "Company :" , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+product = st.selectbox( "Product :" , sorted(list(svb[str(product)])), index = None, placeholder = options,)
 company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
 company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
 company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
