@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Laptop Prediction Model App")
 st.write(
-    "Select your laptop specification So You would know "
+    "Select your laptop specification So you would know your budget"
 )
 
 # Define the options for the selectbox
@@ -11,7 +11,7 @@ options = ["Option A", "Option B", "Option C"]
 
 # Create the selectbox
 selected_option = st.selectbox(
-    "Choose an option:",  # Label for the selectbox
+    "Company:",  # Label for the selectbox
     options             # List of options
 )
 
@@ -19,4 +19,4 @@ selected_option = st.selectbox(
 st.write("You selected:", selected_option)
 
 if st.button("Click"):
-  st.write("Your Budget should be ....")
+  st.write(f"Your Budget should be .... {result()}")
