@@ -15,7 +15,7 @@ for options in svb.keys():
     placeholder = options,
     )
 
-feature = [x for x in svb.keys()]  
-price= result(featu)
+features = [x for x in svb.keys()]  
+price= result(features)
 if st.button("Click"):
-  st.write(f"Your Budget should be £{result()}")
+  st.write(f"Your Budget should be £{price}")
