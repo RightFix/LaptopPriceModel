@@ -9,7 +9,7 @@ st.write(
 
 company = st.selectbox( "Company" , sorted(list(svb["company"])), index = None, placeholder = "Company")
 product = st.selectbox( "Product" , sorted(list(svb["product"])), index = None, placeholder = "Product")
-typename = st.selectbox( "Type Name", sorted(list(svb["typename'])), index = None, placeholder = "Type Name")
+typename = st.selectbox( "Type Name", sorted(list(svb["typename"])), index = None, placeholder = "Type Name")
 inches = st.selectbox( "Inches", sorted(list(svb["inches"])), index = None, placeholder = "Inches")
 screenresoluttion =  st.selectbox( "Screen Resolution" , sorted(list(svb["screenresoluttion"])), index = None, placeholder = "Screen Resolution")
 cpu= st.selectbox( "CPU", sorted(list(svb["cpu"])), index = None, placeholder = "CPU")
