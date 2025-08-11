@@ -17,4 +17,4 @@ for options in svb.keys():
   
 
 if st.button("Click"):
-  st.write(f"Your Budget should be £{}")
+  st.write(f"Your Budget should be £{result()}")
