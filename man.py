@@ -169,7 +169,7 @@ data.info()
 # In[ ]:
 
 
-x = data.drop(["price_euros", "inches"], axis=1 ) # Independent variable (predictor)
+x = data.drop(columns =["price_euros", "inches"], axis=1 ) # Independent variable (predictor)
 y = data["price_euros"] # Dependent variable (target)
 
 
