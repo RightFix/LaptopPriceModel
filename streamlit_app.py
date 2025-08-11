@@ -1,6 +1,6 @@
 import streamlit as st
-#import ipynb.fs.full.main 
-from man import svb, result
+from ipynb.fs.full.main import result, svb
+#from man import svb, result
 
 st.title("Laptop Prediction Model App")
 st.write(
