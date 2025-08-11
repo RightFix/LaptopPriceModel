@@ -12,7 +12,8 @@ st.write(
 company_options = ["","Apple", "HP", "Microsoft"]
 
 # Create the selectbox
-company_option = st.selectbox( "Company:",  company_options)
+#company_option = 
+st.selectbox( "Company:",  company_options)
 for options in svb.keys():
   st.selectbox= ( options , ["",] + list(svb[options]))
   
