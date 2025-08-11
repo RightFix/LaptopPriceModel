@@ -2,3 +2,5 @@ streamlit
 seaborn
 ipynb
 scikit-learn
+numpy
+pandas
