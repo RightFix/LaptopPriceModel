@@ -1,4 +1,5 @@
 import streamlit as st
+from ipynb.fs.defs.main import result
 
 st.title("🎈 My new app")
 st.write(
