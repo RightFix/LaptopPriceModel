@@ -2,9 +2,9 @@ import streamlit as st
 #from ipynb.fs.full.main import result, svb
 from man import svb, result
 
-st.title("Laptop Prediction Model App")
+st.title("Laptop Price Model")
 st.write(
-    "Select your laptop specification So you would know your budget"
+    "Select your laptop specification so you would know your budget"
 )
 
 company = st.selectbox( "Company" , sorted(list(svb["company"])),  placeholder = "Company")
