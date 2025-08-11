@@ -19,7 +19,7 @@ gpu = st.selectbox( "GPU" , sorted(list(svb[str(gpu)])), index = None, placehold
 opsys= st.selectbox( "Operating System" , sorted(list(svb[str(opsys)])), index = None, placeholder ="Operating System")
 weight= st.selectbox( "Weight" , sorted(list(svb[str(weight)])), index = None, placeholder ="Weight")
 
-features = [company, product, typename, inches, screeenresoluttion, cpu, ram, , memory, gpu, opsys, weight ]  
+features = [company, product, typename, inches, screeenresoluttion, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{price[0]}")
