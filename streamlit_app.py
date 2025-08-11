@@ -3,5 +3,5 @@ import streamlit as st
 
 st.title("Laptop Prediction Model App")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Select your laptop specification So You would know "
 )
