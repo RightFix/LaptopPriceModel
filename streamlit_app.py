@@ -18,7 +18,12 @@ company_option = st.selectbox(
   index= None
 )
 for options in svb.keys():
-  st.selectbox= ( options , ["",] + list(svb[options]), place_holder = options)
+  st.selectbox= ( 
+    options ,
+    list(svb[options]),
+    place_holder = options,
+    index = None
+    )
   
 # Display the selected option
 
