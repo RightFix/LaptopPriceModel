@@ -17,10 +17,11 @@ company_option = st.selectbox(
   company_options,
   index= None
 )
+
 for options in svb.keys():
-  st.selectbox( 
+  options = st.selectbox( 
     options ,
-    list(svb[options]),
+    sorted(list(svb[options])),
     index = None,
     placeholder = options
     )
