@@ -1,7 +1,7 @@
 import streamlit as st
 import seaborn as sns
 #import ipynb.fs.full.main 
-import man 
+from man import svb, result
 
 st.title("Laptop Prediction Model App")
 st.write(
