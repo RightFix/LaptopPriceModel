@@ -16,6 +16,6 @@ company_option = st.selectbox(
 )
 
 # Display the selected option
-a = com
+a = company 
 if st.button("Click"):
   st.write(f"Your Budget should be .... {result()}")
