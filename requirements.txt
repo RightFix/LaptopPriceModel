@@ -4,3 +4,4 @@ ipynb
 scikit-learn
 numpy
 pandas
+matplotlib
