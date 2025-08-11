@@ -7,7 +7,8 @@ st.write(
     "Select your laptop specification So you would know your budget"
 )
 
-for options in svb.keys():
+features = [company, product, typename, screeenresoluttion, cpu, ram, , memory, gpu, opsys, weight ]  
+for options in features:
   options = st.selectbox( 
     options.capitalize() ,
     sorted(list(svb[options])),
@@ -15,7 +16,6 @@ for options in svb.keys():
     placeholder = options,
     )
 
-features = [x for x in svb.keys()]  
 price= result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{price[0]}")
