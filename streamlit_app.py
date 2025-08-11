@@ -18,4 +18,4 @@ company_option = st.selectbox(
 # Display the selected option
 a = company_option
 if st.button("Click"):
-  st.write(f"Your Budget should be .... {result()}")
+  st.write(f"Your Budget should be £...")
