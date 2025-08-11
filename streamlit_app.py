@@ -22,6 +22,6 @@ weight= st.selectbox( "Weight" , [""] + sorted(list(svb["weight"])), placeholder
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
 if st.button("Click"):
-  st.write(f"Your Budget should be £{round(price[0],2)}")
+  st.write(f"Your Budget should be £{round(price[0],-2):,}")
   st.write(f"Your Budget should be £{features}")
 
