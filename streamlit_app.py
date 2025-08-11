@@ -16,8 +16,8 @@ cpu= st.selectbox( "CPU", sorted(list(svb["cpu"])), placeholder = "CPU")
 ram = st.selectbox( "RAM", sorted(list(svb["ram"])),placeholder = "RAM")
 memory = st.selectbox( "Memory",  sorted(list(svb["memory"])), placeholder = "Memory",)
 gpu = st.selectbox( "GPU" , sorted(list(svb["gpu"])),  placeholder ="GPU")
-opsys= st.selectbox( "Operating System" ,  sorted(list(svb["opsys"])),  placeholder ="Operating System")
-weight= st.selectbox( "Weight" ,  sorted(list(svb["weight"])), placeholder ="Weight")
+opsys= st.selectbox( "Operating System" , [""] +  sorted(list(svb["opsys"])),  placeholder ="Operating System")
+weight= st.selectbox( "Weight" , [""] + sorted(list(svb["weight"])), placeholder ="Weight")
 
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
