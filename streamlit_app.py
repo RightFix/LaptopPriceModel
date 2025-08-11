@@ -23,7 +23,7 @@ for options in svb.keys():
     options ,
     sorted(list(svb[options])),
     index = None,
-    placeholder = options
+    placeholder = options,
     )
   
 # Display the selected option
