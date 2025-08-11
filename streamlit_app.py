@@ -7,15 +7,16 @@ st.write(
     "Select your laptop specification So you would know your budget"
 )
 
-features = [company, product, typename, screeenresoluttion, cpu, ram, memory, gpu, opsys, weight ]  
-for options in features:
-  options = st.selectbox( 
-    options.capitalize() ,
-    sorted(list(svb[str(options)])),
-    index = None,
-    placeholder = options,
-    )
+company = st.selectbox(  , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
+company = st.selectbox( options.capitalize() , sorted(list(svb[str(company)])), index = None, placeholder = options,)
 
+features = [company, product, typename, screeenresoluttion, cpu, ram, , memory, gpu, opsys, weight ]  
 price= result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{price[0]}")
