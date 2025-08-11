@@ -7,7 +7,7 @@ st.write(
 )
 
 # Define the options for the selectbox
-options = ["Option A", "Option B", "Option C"]
+options = ["Apple", "HP", ""]
 
 # Create the selectbox
 selected_option = st.selectbox(
