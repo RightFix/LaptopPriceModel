@@ -1,3 +1,4 @@
 streamlit
 seaborn
 ipynb
+scikit-learn
