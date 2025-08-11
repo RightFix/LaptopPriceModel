@@ -12,7 +12,7 @@ company_options = ["","Apple", "HP", "Microsoft"]
 # Create the selectbox
 company_option = st.selectbox(
     "Company:",  # Label for the selectbox
-    options             # List of options
+    company_options             # List of options
 )
 
 # Display the selected option
