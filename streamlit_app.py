@@ -11,7 +11,7 @@ features = [company, product, typename, screeenresoluttion, cpu, ram, , memory, 
 for options in features:
   options = st.selectbox( 
     options.capitalize() ,
-    sorted(list(svb[options])),
+    sorted(list(svb[str(options)])),
     index = None,
     placeholder = options,
     )
