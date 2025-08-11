@@ -10,13 +10,12 @@ st.write(
 options = ["Apple", "HP", "Microsoft"]
 
 # Create the selectbox
-selected_option = st.selectbox(
+company_option = st.selectbox(
     "Company:",  # Label for the selectbox
     options             # List of options
 )
 
 # Display the selected option
-st.write("You selected:", selected_option)
-
+a = com
 if st.button("Click"):
   st.write(f"Your Budget should be .... {result()}")
