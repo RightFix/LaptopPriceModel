@@ -249,22 +249,22 @@ r2 = r2_score(y_test, predictions)
 
 # user input would be taken care of in this cell
 #a, b, c, d, e,f ,g, h,i,j = "Apple", "MacBook Pro", "", "1.4", "", "", "", "", "", "3.2kg"
-def result(a, b, c, d ,e, f, g, h, i, j):
+def result(feature):
    # creating an empty dictionary whenever it is called
    test_data = {}
    for test_cols in x.columns:
           test_data.update({test_cols:[""]})
 
-   test_data["company"]= a
-   test_data["product"] = b
-   test_data["typename"] = c
-   test_data["inches"] = float(d)
-   test_data["screenresolution"] = e
-   test_data["cpu"] = f
-   test_data["memory"] = g
-   test_data["gpu"]= h
-   test_data["opsys"] = i
-   test_data["weight"] = j
+   test_data["company"]= feature[0]
+   test_data["product"] = feature [1]
+   test_data["typename"] = feature[2]
+   test_data["inches"] = float(feature[3])
+   test_data["screenresolution"] = feature[4]
+   test_data["cpu"] = feature[5]
+   test_data["memory"] = feature[6]
+   test_data["gpu"]= feature[7]
+   test_data["opsys"] = feature[8]
+   test_data["weight"] = feature[9]
 
    test_data_df = pd.DataFrame(test_data)
    #print(test_data_df)
