@@ -15,7 +15,6 @@ for options in svb.keys():
     placeholder = options,
     )
   
-# Display the selected option
 
 if st.button("Click"):
-  st.write(f"Your Budget should be £...")
+  st.write(f"Your Budget should be £{}")
