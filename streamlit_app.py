@@ -1,4 +1,5 @@
 import streamlit as st
+import seaborn as sns
 #import ipynb.fs.full.main 
 import man 
 
