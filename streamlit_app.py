@@ -7,7 +7,7 @@ st.write(
     "Select your laptop specification So you would know your budget"
 )
 
-features = [company, product, typename, screeenresoluttion, cpu, ram, , memory, gpu, opsys, weight ]  
+features = [company, product, typename, screeenresoluttion, cpu, ram, memory, gpu, opsys, weight ]  
 for options in features:
   options = st.selectbox( 
     options.capitalize() ,
