@@ -258,7 +258,10 @@ def result(feature):
    test_data["company"]= feature[0]
    test_data["product"] = feature [1]
    test_data["typename"] = feature[2]
-   test_data["inches"] = float(feature[3])
+   if feature[3] isdigit:
+    test_data["inches"] = float(feature[3])
+   else:
+    test_data["inches"] = feature[3]
    test_data["screenresolution"] = feature[4]
    test_data["cpu"] = feature[5]
    test_data["memory"] = feature[6]
