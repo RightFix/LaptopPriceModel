@@ -11,7 +11,7 @@ company = st.selectbox( "Company" , sorted(list(svb["company"])),  placeholder =
 product= st.selectbox( "Product" , [""] + sorted(list(svb["product"])),  placeholder = "Product")
 typename = st.selectbox( "Type Name",  [""] + sorted(list(svb["typename"])),  placeholder = "Type Name")
 inches = st.selectbox( "Inches", [""] + sorted(list(svb["inches"])), placeholder = "Inches")
-screenresolution =  st.selectbox( "Screen Resolution" , [""] +sorted(list(svb["screenresolution"])), placeholder = "Screen Resolution")
+screenresolution =  st.selectbox( "Screen Resolution" , [""] + sorted(list(svb["screenresolution"])), placeholder = "Screen Resolution")
 cpu= st.selectbox( "CPU", [""] + sorted(list(svb["cpu"])), placeholder = "CPU")
 ram = st.selectbox( "RAM", [""] + sorted(list(svb["ram"])),placeholder = "RAM")
 memory = st.selectbox( "Memory", [""] + sorted(list(svb["memory"])), placeholder = "Memory",)
