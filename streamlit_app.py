@@ -14,8 +14,10 @@ company_options = ["","Apple", "HP", "Microsoft"]
 company_option = st.selectbox(
     "Company:",  company_options  
 )
-
+for options in sbv.keys():
+  st.selectbox= ( options , ["",] + list(sbv[options]))
+  
 # Display the selected option
-a = company_option
+
 if st.button("Click"):
   st.write(f"Your Budget should be £...")
