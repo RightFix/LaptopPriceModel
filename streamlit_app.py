@@ -1,5 +1,6 @@
 import streamlit as st
 #import ipynb.fs.full.main 
+import man 
 
 st.title("Laptop Prediction Model App")
 st.write(
@@ -11,8 +12,7 @@ company_options = ["","Apple", "HP", "Microsoft"]
 
 # Create the selectbox
 company_option = st.selectbox(
-    "Company:",  # Label for the selectbox
-    company_options             # List of options
+    "Company:",  company_options  
 )
 
 # Display the selected option
