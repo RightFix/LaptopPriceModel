@@ -1,6 +1,6 @@
 import streamlit as st
 #from ipynb.fs.full.main import result, svb
-from man import svb, result
+from main import svb, result
 
 st.title("Laptop Price Model")
 st.write(
