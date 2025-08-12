@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# 🎈 Laptop Price Model Using Streamkit (Group K)
 
 A simple Streamlit app template for you to modify!
 
