@@ -19,6 +19,9 @@ gpu = st.selectbox( "GPU" , sorted(list(svb["gpu"])),  placeholder ="GPU")
 opsys= st.selectbox( "Operating System" ,  sorted(list(svb["opsys"])),  placeholder ="Operating System")
 weight= st.selectbox( "Weight" , sorted(list(svb["weight"])), placeholder ="Weight")
 
+for keys in svb.keys():
+  exec(keys = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
+
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
 if st.button("Click"):
