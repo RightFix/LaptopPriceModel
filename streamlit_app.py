@@ -21,7 +21,11 @@ weight= st.selectbox( "Weight" , sorted(list(svb["weight"])), placeholder ="Weig
 """
 
 for keys in svb.keys():
-  exec("keys = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys")
+  #exec("keys = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys")
+  def declare_var():
+    globals()[keys] = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
+
+declare_var()
 
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
