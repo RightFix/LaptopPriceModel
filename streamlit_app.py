@@ -13,7 +13,7 @@ for keys in svb.keys():
     st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
  # declare_var()
 
-features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
+features = None #[company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{round(price[0],-2):,}")
