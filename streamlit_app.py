@@ -7,7 +7,6 @@ st.write(
     "Select your laptop specification so you would know your budget"
 )
 
-
 for keys in svb.keys():
   def declare_var():
     globals()[keys] = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
