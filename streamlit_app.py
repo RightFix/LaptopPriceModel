@@ -8,9 +8,10 @@ st.write(
 )
 
 for keys in svb.keys():
-  def declare_var():
-    globals()[keys] = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
-  declare_var()
+  #def declare_var():
+    #globals()[keys] = 
+    st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
+ # declare_var()
 
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
