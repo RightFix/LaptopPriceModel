@@ -14,7 +14,7 @@ for keys in svb.keys():
  # declare_var()
 
 features = None #[company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
-price= result(features)
+price= None #result(features)
 if st.button("Click"):
   st.write(f"Your Budget should be £{round(price[0],-2):,}")
   st.write("Your specification are :- ")
