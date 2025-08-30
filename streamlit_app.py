@@ -13,7 +13,6 @@ for keys in svb.keys():
         [" "] +  sorted(list(svb[keys])) if keys != "inches" else [0] + sorted(list(svb[keys])))
     features.append(globals()[keys])
     
-
 price= result(features)
 
 if st.button("Click"):
