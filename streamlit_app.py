@@ -18,7 +18,7 @@ for keys in svb.keys():
 price= result(features)
 
 if st.button("Click"):
-  if " " in features:
+  if " " in features or 0 in features:
     st.write(f"Incomplete input")
   
   else:
