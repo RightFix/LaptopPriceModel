@@ -6,10 +6,13 @@ st.write(
     "Select your laptop specification so you would know your budget"
 )
 
+features = []
 for keys in svb.keys():
   globals()[keys] = st.selectbox( keys.upper() , sorted(list(svb[keys])), placeholder = keys)
+  features.append(globals()[keys])
 
-features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
+
+#[company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
 
 if st.button("Click"):
