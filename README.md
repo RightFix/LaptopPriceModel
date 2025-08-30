@@ -24,7 +24,7 @@ A simple Streamlit app that predicts laptop price
 
  Libang Success Obi
 
- [!Ude Righteousness Nwannennaya](https://github.com/RightFix)
+ [Ude Righteousness Nwannennaya](https://github.com/RightFix)
 
  Ebong Nsikanabasi Samuel 
 
@@ -36,6 +36,6 @@ A simple Streamlit app that predicts laptop price
 
  Peter Justice Emmanuel
 
- [!Essien Ubong Bassey](https://github.com/Ubongggg)
+ [Essien Ubong Bassey](https://github.com/Ubongggg)
 
  Micheal Kubiatabasi Edet
