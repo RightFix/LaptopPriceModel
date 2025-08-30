@@ -17,13 +17,15 @@ price= result(features)
 
 if st.button("Click"):
     
-     if " " in features or 0 in features:
-        st.write("Incomplete input")
-  
-     else:
+     if 0 not in features:
+         
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
         features_name = [x for x in svb.keys()]
         for f, fn in zip(features, features_name):
             st.write(f" {fn}: {f}")
+  
+     else:
+        st.write("Incomplete input")
+        
 
