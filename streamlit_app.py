@@ -8,7 +8,7 @@ st.write(
 
 features = []
 for keys in svb.keys():
-    if keys != "weight" or keys != "inches" :
+    if keys != "inches" :
         globals()[keys] = st.selectbox( keys.upper() , [" "] +  sorted(list(svb[keys])))
         features.append(globals()[keys])
     else:
