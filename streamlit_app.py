@@ -16,8 +16,8 @@ for keys in svb.keys():
 price= result(features)
 
 if st.button("Click"):
-    
-     if 0 not in features:
+     filled_box = [x for x in features != " "]
+     if 0 not in features or len(filled_box) > 0:
          
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
