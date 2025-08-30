@@ -8,7 +8,7 @@ st.write(
 
 features = []
 for keys in svb.keys():
-  globals()[keys] = st.selectbox( keys.upper() , [""].extend(sorted(list(svb[keys]))), index = 0)
+  globals()[keys] = st.selectbox( keys.upper() , ["hi"].extend(sorted(list(svb[keys]))), index = 0)
   features.append(globals()[keys])
 
 price= result(features)
