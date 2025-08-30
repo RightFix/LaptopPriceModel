@@ -7,7 +7,7 @@ st.write(
 )
 
 for keys in svb.keys():
-  globals()[keys] = st.selectbox( keys , sorted(list(svb[keys])), placeholder = keys)
+  globals()[keys] = st.selectbox( keys.upper() , sorted(list(svb[keys])), placeholder = keys)
 
 features = [company, product, typename, inches, screenresolution, cpu, ram, memory, gpu, opsys, weight ]  
 price= result(features)
