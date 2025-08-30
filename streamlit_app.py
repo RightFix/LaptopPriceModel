@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 from main import svb, result
 
@@ -6,9 +7,10 @@ st.write(
     "Select your laptop specification so you would know your budget"
 )
 
+pattern = r"[A-Z][a-z][0-9]"
 features = []
 for keys in svb.keys():
-    if keys != "inches":
+    if re.findall(pattern, list(svb.values()[0])):
         globals()[keys] = st.selectbox( keys.upper() , [" "] +  sorted(list(svb[keys])))
         features.append(globals()[keys])
     else:
