@@ -9,10 +9,11 @@ st.write(
 features = []
 we = svb.pop("weight")
 for keys in svb.keys():
-  globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])), index = 0)
+  globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])))
   features.append(globals()[keys])
 
-price= result(features)
+weight  = st.selectbox( "weight".upper() , [0] + sorted(list(we)))
+price= result(features.append(weight))
 
 if st.button("Click"):
   st.write(f"Your Budget should be £{round(price[0],-2):,}")
