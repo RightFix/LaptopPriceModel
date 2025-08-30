@@ -9,10 +9,10 @@ st.write(
 features = []
 for keys in svb.keys():
     if list(svb.values())[0].isdigit():
-        globals()[keys] = st.selectbox( keys.upper() , [0] + sorted(list(svb[keys])))
+        globals()[keys] = st.selectbox( keys.upper() , [" "] +  sorted(list(svb[keys])))
         features.append(globals()[keys])
     else:
-        globals()[keys] = st.selectbox( keys.upper() , [" "] +  sorted(list(svb[keys])))
+        globals()[keys] = st.selectbox( keys.upper() , [0] + sorted(list(svb[keys])))
         features.append(globals()[keys])
 
 price= result(features)
