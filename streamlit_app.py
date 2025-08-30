@@ -13,7 +13,7 @@ for keys in svb.keys():
   globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])))
   features.append(globals()[keys])
 
-weight  = st.selectbox( "weight".upper() , [0] + sorted(list(we)))
+weight  = st.selectbox( "weight".upper() , [0] + sorted(list(weight)))
 features = features.append(weight)
 price= result(features)
 
