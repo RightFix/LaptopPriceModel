@@ -36,6 +36,6 @@ A simple Streamlit app that predicts laptop price
 
  Peter Justice Emmanuel
 
- Essien Ubong Bassey
+ [!Essien Ubong Bassey](https://github.com/Ubongggg)
 
  Micheal Kubiatabasi Edet
