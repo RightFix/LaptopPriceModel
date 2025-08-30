@@ -7,14 +7,11 @@ st.write(
 )
 
 features = []
-weight= svb["weight"]
-weight  = st.selectbox( "weight".upper() , [0] + sorted(list(weight)))
-we= svb.pop("weight")
 for keys in svb.keys():
-  globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])))
-  features.append(globals()[keys])
+    if keys != "weight":
+        globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])))
+        features.append(globals()[keys])
 
-features = features.append(weight)
 price= result(features)
 
 if st.button("Click"):
