@@ -17,3 +17,14 @@ A simple Streamlit app that predicts laptop price
    ```
    $ streamlit run streamlit_app.py
    ```
+###Contributors: 
+ Wilson Isreal John
+ Libang Success Obi
+ Ude Righteousness Nwannennaya
+ Ebong Nsikanabasi Samuel 
+ Bassey Shine Joseph
+ Okon Imoh Daniel
+ Uyeh Samuel John
+ Peter Justice Emmanuel
+ Essien Ubong Bassey
+ Micheal Kubiatabasi Edet
