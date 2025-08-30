@@ -7,7 +7,7 @@ st.write(
 )
 
 features = []
-weight= svb.["weight"]
+weight= svb["weight"]
 we= svb.pop("weight")
 for keys in svb.keys():
   globals()[keys] = st.selectbox( keys.upper() , [" "] + sorted(list(svb[keys])))
