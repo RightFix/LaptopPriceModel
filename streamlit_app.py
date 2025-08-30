@@ -8,7 +8,7 @@ st.write(
 
 features = []
 for keys in svb.keys():
-    if svb[keys][0].isdigit():
+    if list(svb.values())[0].isdigit():
         globals()[keys] = st.selectbox( keys.upper() , [0] + sorted(list(svb[keys])))
         features.append(globals()[keys])
     else:
