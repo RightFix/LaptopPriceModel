@@ -19,7 +19,7 @@ price= result(features)
 
 if st.button("Click"):
   if " " in features or 0 in features:
-    st.write(f"Incomplete input")
+    st.write("Incomplete input")
   
   else:
     st.write(f"Your Budget should be £{round(price[0],-2):,}")
