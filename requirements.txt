@@ -1,9 +1,4 @@
 streamlit
-seaborn
-ipynb
 scikit-learn
 numpy
 pandas
-matplotlib
-ipython
-jupyter
