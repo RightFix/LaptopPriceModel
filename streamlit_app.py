@@ -22,7 +22,7 @@ if st.button("Click"):
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
         features_name = [x for x in svb.keys()]
-        for fb, fn in zip(filled_box, features_name):
+        for fn, fb in zip(features_name, filled_box):
             st.write(f" {fn}: {fb}")
   
      else:
