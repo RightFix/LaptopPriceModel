@@ -15,14 +15,15 @@ for keys in svb.keys():
     
 price= result(features)
 
+filled_box = [x for x in features if x != "" or x != 0]
 if st.button("Click"):
-     if 0 not in features or len([x for x in features if x != " " or x != 0]) > 0:
+     if 0 not in features or len(filled_box) > 0:
          
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
         features_name = [x for x in svb.keys()]
-        for f, fn in zip(features, features_name):
-            st.write(f" {fn}: {f}")
+        for fb, fn in zip(filled_box, features_name):
+            st.write(f" {fn}: {fb}")
   
      else:
         st.write("Incomplete input")
