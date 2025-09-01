@@ -28,5 +28,3 @@ if st.button("Click"):
   
      else:
         st.write("Enter at least two field")
-        
-
