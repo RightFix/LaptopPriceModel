@@ -17,7 +17,7 @@ for keys in svb.keys():
 # Sends user innput to  the result function in the main.py file 
 price= result(features)
 
-filled_box = [x for x in features if x != "" or x != 0]
+filled_box = [x for x in features if x != ""]
 if st.button("Click"):
      # Output the user input
      if  len(filled_box) > 0:
