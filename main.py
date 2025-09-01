@@ -26,12 +26,13 @@ from sklearn.pipeline import Pipeline
 # Defining dataset to a variable
 df = pd.read_csv("dataset/laptop_price.csv")
 
-#Standardise columns name by making it lowercase
-df.columns = df.columns.str.replace(" ","_").str.lower()
 
 # Dropping the laptop_ID column because it isn't need in the analysis
 # Using data variable instead of df so as not to tamper with the original dataset
 data = df.drop(columns= "laptop_Id")
+
+# Standardise columns name by making it understandable
+data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ram" : "RAM", "Price_euros": "Price(£)", "OpSys": "Operating_System", "ScreenResolution": "Screen_Resolution"})
 
 # Remove duplicate samples
 data = data.drop_duplicates()
