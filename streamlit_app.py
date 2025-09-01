@@ -26,6 +26,6 @@ if st.button("Click"):
             st.write(f" {fn}: {fb}")
   
      else:
-        st.write("Incomplete input")
+        st.write("Enter at least one field")
         
 
