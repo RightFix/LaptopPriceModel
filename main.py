@@ -31,7 +31,7 @@ df.columns = df.columns.str.replace(" ","_").str.lower()
 
 # Dropping the laptop_ID column because it isn't need in the analysis
 # Using data variable instead of df so as not to tamper with the original dataset
-data = df.drop(columns= "laptop_id")
+data = df.drop(columns= "laptop_Id")
 
 # Remove duplicate samples
 data = data.drop_duplicates()
