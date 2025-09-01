@@ -71,7 +71,7 @@ model.fit(x_train, y_train)
 
 def result(feature):
 
-   test_data = {test_cols :[feature[id]] for test_cols, id in zip(x.columns, range(len(x.columns)))}
+   test_data = {test_cols :[feature[idx]] for test_cols, idx in zip(x.columns, range(len(x.columns)))}
    
    test_data_df = pd.DataFrame(test_data)
   
