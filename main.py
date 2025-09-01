@@ -37,9 +37,8 @@ data = df.drop(columns= "laptop_id")
 data = data.drop_duplicates()
 
 # Filling null value with the mode of their column
-data.gpu = data.gpu.fillna(data.gpu.mode()[0])
-data.weight= data.weight.fillna(data.weight.mode()[0])
-
+data.GPU = data.GPU.fillna(data.GPU.mode()[0])
+data.Weight= data.Weight.fillna(data.Weight.mode()[0])
 
 # creation And Training Models
 
@@ -69,31 +68,13 @@ model = Pipeline(steps=[
 # Train
 model.fit(x_train, y_train)
 
-
-# Predict
-predictions = model.predict(x_test)
-
-
 def result(feature):
-   # creating an empty dictionary whenever it is called
-   test_data = {}
-   for test_cols in x.columns:
-          test_data.update({test_cols:[""]})
 
-   test_data["company"]= feature[0]
-   test_data["product"] = feature [1]
-   test_data["typename"] = feature[2]
-   test_data["inches"] = feature[3]
-   test_data["screenresolution"] = feature[4]
-   test_data["cpu"] = feature[5]
-   test_data["memory"] = feature[6]
-   test_data["gpu"]= feature[7]
-   test_data["opsys"] = feature[8]
-   test_data["weight"] = feature[9]
-
+   test_data = {test_cols :[feature[id]] for test_cols, id in zip(x.columns, range(len(x.columns)))}
+   
    test_data_df = pd.DataFrame(test_data)
-
-   # test data to numeric because of category columns    
+  
+   # test data to numeric because of category columns
 
    onehot_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
 
@@ -102,8 +83,8 @@ def result(feature):
       encoded_features = onehot_encoder.fit_transform(test_data_df[[cols]])
       # Create a DataFrame from the encoded features with appropriate column names
       encoded_df = pd.DataFrame(encoded_features, columns=onehot_encoder.get_feature_names_out([cols]))
-      #Concatenate with the original DataFrame 
-      df_encoded = pd.concat([test_data_df, encoded_df], axis=1) 
+      #Concatenate with the original DataFrame
+      df_encoded = pd.concat([test_data_df, encoded_df], axis=1)
 
    return model.predict(df_encoded)
 
