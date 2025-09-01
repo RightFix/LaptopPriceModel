@@ -20,7 +20,7 @@ price= result(features)
 filled_box = [x for x in features if x != ""]
 if st.button("Click"):
      # Output the user input
-     if  len(filled_box) > 0:
+     if  len(filled_box) > 1:
          
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
@@ -28,6 +28,6 @@ if st.button("Click"):
             st.write(f"{fb}")
   
      else:
-        st.write("Enter at least one field")
+        st.write("Enter at least two field")
         
 
