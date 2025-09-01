@@ -29,7 +29,7 @@ df = pd.read_csv("dataset/laptop_price.csv")
 
 # Dropping the laptop_ID column because it isn't need in the analysis
 # Using data variable instead of df so as not to tamper with the original dataset
-data = df.drop(columns= "laptop_Id")
+data = df.drop(columns= "laptop_ID")
 
 # Standardise columns name by making it understandable
 data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ram" : "RAM", "Price_euros": "Price(£)", "OpSys": "Operating_System", "ScreenResolution": "Screen_Resolution"})
