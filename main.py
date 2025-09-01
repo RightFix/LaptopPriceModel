@@ -43,8 +43,8 @@ data.Weight= data.Weight.fillna(data.Weight.mode()[0])
 
 # creation And Training Models
 
-x = data.drop(columns =["price_euros"], axis=1 ) # Independent variable (predictor)
-y = data["price_euros"] # Dependent variable (target)
+x = data.drop(columns =["Price(£)", "Inches"], axis=1 ) # Independent variable (predictor)
+y = data["Price(£)"] # Dependent variable (target)
 
 x_train, x_test, y_train, y_test = split(x, y, test_size= 0.25, random_state=25)
 
