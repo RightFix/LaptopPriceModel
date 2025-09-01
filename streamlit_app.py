@@ -14,7 +14,7 @@ for keys in svb.keys():
         [" "] +  sorted(list(svb[keys])) if keys != "inches" else [0] + sorted(list(svb[keys])))
     features.append(globals()[keys])
 
-#Sends user innput to  the result function in  the main.py 
+# Sends user innput to  the result function in the main.py file 
 price= result(features)
 
 filled_box = [x for x in features if x != "" or x != 0]
@@ -24,8 +24,8 @@ if st.button("Click"):
         st.write(f"Your Budget should be £{round(price[0],-2):,}")
         st.write("Your specification are :- ")
         features_name = [x for x in svb.keys()]
-        for fn, fb in zip(features_name, filled_box):
-            st.write(f" {fn}: {fb}")
+        for fb in filled_box:
+            st.write(f"{fb}")
   
      else:
         st.write("Enter at least one field")
