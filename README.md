@@ -38,4 +38,4 @@ A simple Streamlit app that predicts laptop price
 
  [Essien Ubong Bassey](https://github.com/Ubongggg)
 
- [Micheal Kubiatabasi Edet](https://github.com/)
+ [Micheal Kubiatabasi Edet](https://github.com/Kubiat-567)
