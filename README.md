@@ -20,7 +20,7 @@ A simple Streamlit app that predicts laptop price
 
 ### Contributors: 
 
- [Wilson Isreal John](https://github.com/Wilson)
+ [Wilson Isreal John](https://github.com/Wilsonoo1)
 
  [Libang Success Obi](https://github.com/libangsuccess-hub)
 
