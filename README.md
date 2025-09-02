@@ -1,8 +1,8 @@
-# 🎈 Laptop Price Model Using Streamkit (Group K)
+# [Laptop Price Web App Using Streamkit (Group K)](https://laptop-price-model.streamlit.app/)
 
 A simple Streamlit app that predicts laptop price
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://laptop-price-model.streamlit.app/)
 
 ### How to run it on your own machine
 
@@ -20,22 +20,22 @@ A simple Streamlit app that predicts laptop price
 
 ### Contributors: 
 
- Wilson Isreal John
+ [Wilson Isreal John](https://github.com/Wilson)
 
- Libang Success Obi
+ [Libang Success Obi](https://github.com/libangsuccess-hub)
 
  [Ude Righteousness Nwannennaya](https://github.com/RightFix)
 
- Ebong Nsikanabasi Samuel 
+ [Ebong Nsikanabasi Samuel](https://github.com/ancientone1011)
 
- Bassey Shine Joseph
+ [Bassey Shine Joseph](https://github.com/shinebassey119-bot)
 
- Okon Imoh Daniel
+ [Okon Imoh Daniel](https://github.com/danielimoh67-beep)
 
- Uyeh Samuel John
+ [Uyeh Samuel John](https://github.com/uyehsamjohn62-creator)
 
- Peter Justice Emmanuel
+ [Peter Justice Emmanuel](https://github.com/)
 
  [Essien Ubong Bassey](https://github.com/Ubongggg)
 
- Micheal Kubiatabasi Edet
+ [Micheal Kubiatabasi Edet](https://github.com/)
