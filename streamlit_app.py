@@ -7,7 +7,7 @@ st.write(
     "Select your laptop specification so you would know your budget"
 )
 # Prevent all from sleeping
-st_autorefresh(internal = 60000, key= "refresh")
+st_autorefresh(interval = 60000, key= "refresh")
 # Creation of selectioon  box and cooolecctionn  of user input
 features = []
 for keys in svb.keys():
