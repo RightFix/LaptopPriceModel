@@ -87,11 +87,9 @@ def result(feature):
    return model.predict(df_encoded)
 
 # Streamlit variables for the Selection Box Variable (SVB)
-
 svb = {}
 for cols in x.columns:
     svb[cols] = set(x[cols].tolist())
-
 
 st.title("Laptop Price Model")
 st.write(
@@ -99,7 +97,8 @@ st.write(
 )
 # Prevent all from sleeping
 st_autorefresh(interval = 60000, key= "refresh")
-# Creation of selectioon  box and cooolecctionn  of user input
+# Creation of selectioon  box and collection  of user input
+
 features = []
 for keys in svb.keys():
     
