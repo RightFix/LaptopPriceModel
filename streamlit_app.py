@@ -34,7 +34,7 @@ df = pd.read_csv("dataset/laptop_price.csv")
 data = df.drop(columns= "laptop_ID")
 
 # Standardise columns name by making it understandable
-data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ram" : "RAM", "Price_euros": "Price(£)", "OpSys": "Operating_System", "ScreenResolution": "Screen_Resolution"})
+data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ram" : "RAM", "Price_euros": "Price(£)", "OpSys": "Operating System", "ScreenResolution": "Screen Resolution"})
 
 # Remove duplicate samples
 data = data.drop_duplicates()
