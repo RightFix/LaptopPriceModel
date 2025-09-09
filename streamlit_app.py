@@ -40,7 +40,7 @@ data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ra
 data = data.drop_duplicates()
 
 # Model Creation And Training
-x = data.drop(columns = ["Price(£)", "Inches", "Weight","CPU", "GPU", "Product"], axis=1 ) # Droping some columns because it is not needed
+x = data.drop(columns = ["Price(£)", "Inches", "Weight", "GPU", "Product"], axis=1 ) # Droping some columns because it is not needed
 y = data["Price(£)"] # Dependent variable (target)
 
 x_train, x_test, y_train, y_test = split(x, y, test_size= 0.25, random_state=25)
