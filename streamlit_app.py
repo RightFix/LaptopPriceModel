@@ -68,23 +68,13 @@ model.fit(x_train, y_train)
 
 def result(feature):
 
-   test_data = {test_cols :[feature[idx]] for test_cols, idx in zip(x.columns, range(len(x.columns)))}
+   test_data = {test_cols :[feature[idx]] for test_cols, idx in enumerate(x.columns)}
    
    test_data_df = pd.DataFrame(test_data)
-  
-   # test data to numeric because of category columns
+   predicted_price = model.predict(test_data_df)
 
-   onehot_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+   return predicted_price
 
-   for cols in test_data_df.select_dtypes(include ="object").columns:
-      # Fit and transform the column
-      encoded_features = onehot_encoder.fit_transform(test_data_df[[cols]])
-      # Create a DataFrame from the encoded features with appropriate column names
-      encoded_df = pd.DataFrame(encoded_features, columns=onehot_encoder.get_feature_names_out([cols]))
-      #Concatenate with the original DataFrame
-      df_encoded = pd.concat([test_data_df, encoded_df], axis=1)
-
-   return model.predict(df_encoded)
 
 # Streamlit variables for the Selection Box Variable (SVB)
 svb = {}
