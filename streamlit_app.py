@@ -105,7 +105,7 @@ for keys in svb.keys():
     globals()[keys] = st.selectbox( keys ,[""] +  sorted(list(svb[keys])))
     features.append(globals()[keys])
 
-# Sends user input to  the result function in the main.py file when te buttob is clicked
+# Sends user input to  the result function in when te button is clicked
 price= result(features)
 
 filled_box = [x for x in features if x != ""]
