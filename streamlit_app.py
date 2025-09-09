@@ -68,7 +68,7 @@ model.fit(x_train, y_train)
 
 def result(feature):
 
-   test_data = {test_cols :[feature[idx]] for test_cols, idx in enumerate(x.columns)}
+   test_data = {test_cols :[feature[idx]] for idx,test_cols in enumerate(x.columns)}
    
    test_data_df = pd.DataFrame(test_data)
    predicted_price = model.predict(test_data_df)
