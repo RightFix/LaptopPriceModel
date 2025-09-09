@@ -39,13 +39,8 @@ data = data.rename(columns = {"TypeName":"Type", "Cpu" :"CPU", "Gpu": "GPU", "Ra
 # Remove duplicate samples
 data = data.drop_duplicates()
 
-# Filling null value with the mode of their column
-data.GPU = data.GPU.fillna(data.GPU.mode()[0])
-data.Weight= data.Weight.fillna(data.Weight.mode()[0])
-
-# Creation And Training Models
-
-x = data.drop(columns =["Price(£)", "Inches"], axis=1 ) 
+# Model Creation And Training
+x = data.drop(columns = ["Price(£)", "Inches", "Weight","CPU", "GPU", "Product"], axis=1 ) # Droping some columns because it is not needed
 y = data["Price(£)"] # Dependent variable (target)
 
 x_train, x_test, y_train, y_test = split(x, y, test_size= 0.25, random_state=25)
