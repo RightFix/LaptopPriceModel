@@ -82,9 +82,9 @@ def result(feature):
       # Create a DataFrame from the encoded features with appropriate column names
       encoded_df = pd.DataFrame(encoded_features, columns=onehot_encoder.get_feature_names_out([cols]))
       #Concatenate with the original DataFrame
-      df_encoded = pd.concat([test_data_df, encoded_df], axis=1)
+      #df_encoded = pd.concat([test_data_df, encoded_df], axis=1)
 
-   return model.predict(df_encoded)
+   return model.predict(encoded_df)
 
 # Streamlit variables for the Selection Box Variable (SVB)
 svb = {}
